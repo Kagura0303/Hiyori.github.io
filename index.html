@@ -1,29 +1,43 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Index.html</title>
-        <link href="./index.css" rel="stylesheet"/>
-        <meta charset="UTF-8">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script src="./index.js"></script>
-    </head>
+<head>
+    <title>Index.html</title>
+    <link href="./index.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="./index.js"></script>
+</head>
 
-    <body>
+<body>
+    <h1 id="topic">Happy Birthday to Hiyori Xiaoxia From Your Little Pudding~</h1>
+    <audio id="audio" loop>
+        <source src="./BGM.mp3" type="audio/mpeg">
+    </audio>
 
-        <h1 id="topic">Happy Birthday to Hiyori Xiaoxia From Your Little Pudding~</h1>
-        <audio autoplay loop>
-            <source src="./BGM.mp3" type="audio/mpeg">
-        </audio>
+    <img src="./board.png" alt="board" id="board">
 
-        <img src="./board.png" alt="board" id="board">
+    <div id="container">
+        <button id="btn1"><</button>
+        <img src="./1.png" alt="HappyBirthday" id="pic">
+        <button id="btn2">></button>
+    </div>
 
-        <div id="container">
-            <button id="btn1"><</button>
-            <img src="./1.png" alt="HappyBirthday" id="pic">
-            <button id="btn2">></button>
-        </div>
+    <script>
+        var audio = document.getElementById("audio");
+        var isAudioPlaying = false;
 
+        function startAudio() {
+            if (!isAudioPlaying) {
+                isAudioPlaying = true;
+                audio.volume = 0.5;
+                audio.play();
+            }
+        }
 
-
-    </body>
+        document.addEventListener("DOMContentLoaded", function() {
+            var container = document.getElementById("container");
+            container.addEventListener("click", startAudio);
+        });
+    </script>
+</body>
 </html>
