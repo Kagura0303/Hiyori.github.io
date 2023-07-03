@@ -15,7 +15,8 @@ var imageUrls = [
     "./14.jpg",
     "./15.jpg",
     "./16.jpg",
-    "./17.jpg"
+    "./17.jpg",
+    "./18.png"
 ];
 
 var currentImageIndex = 0;
@@ -67,5 +68,19 @@ $(document).ready(function(){
             }
         });
     });
-});
 
+    // Add click event handler for the last picture
+    $("#pic").on("click", function() {
+        if (currentImageIndex === imageUrls.length - 1) {
+            var videoUrl = "./video.mp4"; // Replace with the URL of your video
+
+            // Open a new window or tab to display the video
+            var videoWindow = window.open("", "_blank");
+            videoWindow.document.write(`
+                <video width="1080" height="720" controls>
+                    <source src="./18.mp4" type="video/mp4">
+                </video>
+            `);
+        }
+    });
+});
