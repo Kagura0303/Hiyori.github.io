@@ -11,18 +11,16 @@ $(document).ready(function(){
     $("#btn1").click(function() {
         $("#pic").fadeOut(500, function() {
             currentImageIndex = (currentImageIndex - 1 + imageUrls.length) % imageUrls.length;
-            if (currentImageIndex > 0) {
-                
-                $("#pic").css("width", "235px"); 
-                $("#pic").css("height", "300px"); 
-                $("#pic").css("left", "42.8%");
-                $("#pic").css("top", "28%")
-            } else {
-                
+            if (currentImageIndex === 0) { // Updated condition
                 $("#pic").css("width", ""); 
                 $("#pic").css("height", ""); 
                 $("#pic").css("left", "");
-                $("#pic").css("top", "")
+                $("#pic").css("top", "");
+            } else {
+                $("#pic").css("width", "235px"); 
+                $("#pic").css("height", "300px"); 
+                $("#pic").css("left", "42.8%");
+                $("#pic").css("top", "28%");
             }
             $("#pic").attr("src", imageUrls[currentImageIndex]).fadeIn(500);
         });
@@ -31,20 +29,19 @@ $(document).ready(function(){
     $("#btn2").click(function() {
         $("#pic").fadeOut(500, function() {
             currentImageIndex = (currentImageIndex + 1) % imageUrls.length;
-            if (currentImageIndex > 0) {
-                
-                $("#pic").css("width", "235px"); 
-                $("#pic").css("height", "300px"); 
-                $("#pic").css("left", "42.8%");
-                $("#pic").css("top", "28%")
-            } else {
-                
+            if (currentImageIndex === 0) { // Updated condition
                 $("#pic").css("width", ""); 
                 $("#pic").css("height", ""); 
                 $("#pic").css("left", "");
-                $("#pic").css("top", "")
+                $("#pic").css("top", "");
+            } else {
+                $("#pic").css("width", "235px"); 
+                $("#pic").css("height", "300px"); 
+                $("#pic").css("left", "42.8%");
+                $("#pic").css("top", "28%");
             }
             $("#pic").attr("src", imageUrls[currentImageIndex]).fadeIn(500);
         });
     });
 });
+
