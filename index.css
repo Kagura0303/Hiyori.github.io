@@ -9,7 +9,7 @@
 
 html
 {
-    background-image: linear-gradient(to bottom right, blue, cyan);
+    background-image: url(./Bg.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     height: 100vh;
