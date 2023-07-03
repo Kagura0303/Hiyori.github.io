@@ -5,7 +5,7 @@ var imageUrls = [
     "./4.jpg"
 ];
 
-var currentImageIndex = 1;
+var currentImageIndex = 0;
 
 $(document).ready(function(){
     $("#btn1").click(function() {
