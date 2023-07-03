@@ -13,12 +13,12 @@ html
     height: 100vh;
 }
 
-#text
+#pic
 {
+    width: 37%;
     position: absolute;
-    top: 43%;
-    left: 48.5%;
-    font-size: 4em;
+    top: 27%;
+    left: 31.5%;
 }
 
 #btn1
@@ -27,6 +27,7 @@ html
     top: 45%;
     left: 32%;
     font-size: 2em;
+    z-index: 99;
 }
 
 #btn2
@@ -35,4 +36,5 @@ html
     top: 45%;
     right: 32%;
     font-size: 2em;
+    z-index: 99;
 }
