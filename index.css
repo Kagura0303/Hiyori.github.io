@@ -1,18 +1,9 @@
-#frame
-{
-    position: fixed;
-    width: 50%;
-    left: 25%;
-    right: 25%;
-    top: 0%;
-}
 
 html
 {
     background-image: url(./Bg.jpg);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
 }
 
 #pic
