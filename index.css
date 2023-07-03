@@ -1,8 +1,10 @@
 #frame
 {
+    position: fixed;
     width: 50%;
-    margin-left: 25%;
-    margin-right: 25%;
+    left: 25%;
+    right: 25%;
+    top: 0%;
 }
 
 html
