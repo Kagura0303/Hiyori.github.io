@@ -9,25 +9,87 @@ html
 #pic
 {
     width: 37%;
-    position: absolute;
+    position: fixed;
     top: 27%;
     left: 31.5%;
 }
 
 #btn1
 {
-    position: absolute;
-    top: 45%;
-    left: 32%;
-    font-size: 2em;
+    position: fixed;
+    top: 42%;
+    left: 23%;
+    font-size: 5em;
     z-index: 99;
+    opacity: 70%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
 
 #btn2
 {
-    position: absolute;
-    top: 45%;
-    right: 32%;
-    font-size: 2em;
+    position: fixed;
+    top: 42%;
+    right: 23%;
+    font-size: 5em;
     z-index: 99;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    opacity: 70%;
 }
+
+button:hover
+{
+    color: rgb(214, 12, 191);
+    opacity: 100%;
+}
+
+#board
+{
+    width: 45%;
+    position: fixed;
+    top: 16.5%;
+    left: 27.5%;
+}
+
+#topic
+{
+    
+}
+
+
+h1 {
+    color: #3f0d4b;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    opacity: 95%;
+    font-family: monospace;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em;
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+    position: fixed;
+    left: 7%;
+    top: 2%;
+    font-size: 2.5em;
+    cursor: default;
+  }
+  
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 90% }
+  }
+  
+ 
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
+  
