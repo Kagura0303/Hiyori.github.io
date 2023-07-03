@@ -1,11 +1,7 @@
-#KaiAn
+body
 {
-    width: 40vw;
-    margin-left: 20%;
-    margin-right: 20%;
-}
-
-html
-{
-    width: 100%;
+    background-image: url(./Happy\ Birthday\ \(1\).png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
