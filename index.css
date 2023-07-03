@@ -1,0 +1,38 @@
+#frame
+{
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+html
+{
+    background-image: linear-gradient(to bottom right, blue, cyan);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#text
+{
+    position: absolute;
+    top: 43%;
+    left: 48.5%;
+    font-size: 4em;
+}
+
+#btn1
+{
+    position: absolute;
+    top: 45%;
+    left: 32%;
+    font-size: 2em;
+}
+
+#btn2
+{
+    position: absolute;
+    top: 45%;
+    right: 32%;
+    font-size: 2em;
+}
