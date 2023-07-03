@@ -18,6 +18,7 @@ function plus()
     if(count>10)
     {
         count = 1;
+        
     }
     document.getElementById('text').innerHTML = count;
 }
