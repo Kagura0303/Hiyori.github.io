@@ -27,8 +27,8 @@ $(document).ready(function(){
                 $("#pic").attr("src", preloadedImages[currentImageIndex].src).show();
             } else {
                 $("#pic").css({
-                    "width": "235px",
-                    "height": "300px",
+                    "width": "16%",
+                    "height": "38%",
                     "left": "42.8%",
                     "top": "28%"
                 });
@@ -45,8 +45,8 @@ $(document).ready(function(){
                 $("#pic").attr("src", preloadedImages[currentImageIndex].src).show();
             } else {
                 $("#pic").css({
-                    "width": "235px",
-                    "height": "300px",
+                    "width": "16%",
+                    "height": "38%",
                     "left": "42.8%",
                     "top": "28%"
                 });
