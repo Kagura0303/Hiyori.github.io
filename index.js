@@ -77,7 +77,7 @@ $(document).ready(function(){
             // Open a new window or tab to display the video
             var videoWindow = window.open("", "_blank");
             videoWindow.document.write(`
-                <video width="1080" height="720" controls>
+                <video width="1080" height="720" controls style="margin-left:15%;">
                     <source src="./18.mp4" type="video/mp4">
                 </video>
             `);
