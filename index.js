@@ -24,6 +24,7 @@ $(document).ready(function(){
             currentImageIndex = (currentImageIndex - 1 + imageUrls.length) % imageUrls.length;
             if (currentImageIndex === 0) {
                 $("#pic").removeAttr("style");
+                $("#pic").attr("src", preloadedImages[currentImageIndex].src).show();
             } else {
                 $("#pic").css({
                     "width": "235px",
@@ -31,8 +32,8 @@ $(document).ready(function(){
                     "left": "42.8%",
                     "top": "28%"
                 });
+                $("#pic").attr("src", preloadedImages[currentImageIndex].src).fadeIn(500);
             }
-            $("#pic").attr("src", preloadedImages[currentImageIndex].src).fadeIn(500);
         });
     });
 
@@ -41,6 +42,7 @@ $(document).ready(function(){
             currentImageIndex = (currentImageIndex + 1) % imageUrls.length;
             if (currentImageIndex === 0) {
                 $("#pic").removeAttr("style");
+                $("#pic").attr("src", preloadedImages[currentImageIndex].src).show();
             } else {
                 $("#pic").css({
                     "width": "235px",
@@ -48,8 +50,9 @@ $(document).ready(function(){
                     "left": "42.8%",
                     "top": "28%"
                 });
+                $("#pic").attr("src", preloadedImages[currentImageIndex].src).fadeIn(500);
             }
-            $("#pic").attr("src", preloadedImages[currentImageIndex].src).fadeIn(500);
         });
     });
 });
+
