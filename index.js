@@ -8,7 +8,6 @@ var imageUrls = [
 var currentImageIndex = 0;
 var preloadedImages = [];
 
-// Preload images
 function preloadImages() {
     for (var i = 0; i < imageUrls.length; i++) {
         var image = new Image();
@@ -18,17 +17,14 @@ function preloadImages() {
 }
 
 $(document).ready(function(){
-    // Preload images on document ready
     preloadImages();
 
     $("#btn1").click(function() {
         $("#pic").fadeOut(500, function() {
             currentImageIndex = (currentImageIndex - 1 + imageUrls.length) % imageUrls.length;
             if (currentImageIndex === 0) {
-                // Reset image styles if it's the first image
                 $("#pic").removeAttr("style");
             } else {
-                // Apply image styles if it's not the first image
                 $("#pic").css({
                     "width": "235px",
                     "height": "300px",
@@ -44,10 +40,8 @@ $(document).ready(function(){
         $("#pic").fadeOut(500, function() {
             currentImageIndex = (currentImageIndex + 1) % imageUrls.length;
             if (currentImageIndex === 0) {
-                // Reset image styles if it's the first image
                 $("#pic").removeAttr("style");
             } else {
-                // Apply image styles if it's not the first image
                 $("#pic").css({
                     "width": "235px",
                     "height": "300px",
